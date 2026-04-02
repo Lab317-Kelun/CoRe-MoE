@@ -133,89 +133,51 @@
   </div>
 </section>
 
-<!-- 说明：方法/示例视频区（整段的小节容器），下方包含一个演示视频。
-     - 更换视频：修改 <video> 或其 <source src="..."> 路径
-     - 控件：controls 显示控制栏，playsinline/loop/autoplay 属性同上 -->
-<!-- Paper video. -->
-
+<!-- 摘要上面的视频 -->
 <section class="section" style="padding-bottom: 0">
   <div class="container">
     <div id="method_video" class="columns is-centered has-text-centered">
       <div class="column is-two-thirds no-bottom-padding">
-        <!-- <video controls src="./camera-ready-video-v2-compressed.mp4" style="border: 1px solid #bbb; border-radius: 10px; width: 100%;"> -->
-          <!-- <iframe height="500" src="https://www.youtube.com/watch?v=83aznJ11_OM&t=21s" title="YouTube video player" frameborder="0" style="border: 1px solid #bbb; border-radius: 10px; width: 100%;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
               <div class="row">
               <div class="col">
                   <video autoplay muted loop playsinline controls src="./resources/Step/Step0.5.mp4" width="90%"
                          style="border-radius:10px; "></video>
               </div>
             </div>
-            <!-- <img src="./resources/simulation.gif" width:100% style="border-radius: 10px;"> -->
       </div>
     </div>
   </div>
 </section>
 
-<!-- 说明：下方整段“Hero Teaser”演示区块已被注释；若需显示，请移除外层注释。 -->
-<!-- <section class="hero teaser">
-  <div class="hero-body">
-    <div class="columns is-centered">
-      <div class="column is-9">
-        <div class="is-centered">
-          <video autoplay muted loop playsinline poster="./resources/loading-icon.gif" style="width: 28%; border: 1px solid #bbb; border-radius: 10px; margin: 2.0%;">
-            <source src="./resources/Robustness/Robustness-1-comp.mp4" type="video/mp4">
-          </video>
-          <video autoplay muted loop playsinline poster="./resources/loading-icon.gif" style="width: 28%; border: 1px solid #bbb; border-radius: 10px; margin: 2.0%;">
-            <source src="./resources/Gap/gap0.8.mp4" type="video/mp4">
-          </video>
-          <video autoplay muted loop playsinline poster="./resources/loading-icon.gif" style="width: 28%; border: 1px solid #bbb; border-radius: 10px; margin: 2.0%;">
-            <source src="./resources/FullParkour_FixedCam.mov" type="video/mp4">
-          </video>
-          <h2 class="subtitle has-text-centered">
-            <strong>Quadrupedal robot expands its capabilities by synthesizing agile locomotion and legged manipulation skills.</strong>
-          </h2> -->
-      <!-- </div>
-      </div>
-    </div>
-  </div>
-</section> -->
 
 <section class="section">
-
   <div class="container">
     <div class="columns is-centered has-text-centered">
       <div class="column is-two-thirds">
-        <!-- TODO: 章节标题（可改成中文“摘要”） -->
+        <!-- 摘要 -->
         <h2 class="title is-2">Abstract</h2>
         <div class="content has-text-justified">
-          <!-- TODO: 摘要正文（整段替换成你的摘要） -->
           <p>
             Humans primarily rely on walking and running to adapt to complex terrains, without employing additional complex or unnecessary motions. Humanoid robots should also focus on smooth switching between walking and running. However, simultaneously achieving gait transitions and multi-terrain adaptation in a unified policy is challenging due to gradient conflicts and terrain-induced visual and dynamic variations. Although Mixture-of-Experts (MoE) can mitigate multi-skill interference, direct joint training often fails to produce clear expert specialization, limiting the effectiveness of MoE. To address these challenges, we propose CoRe-MoE, a two-stage reinforcement learning framework integrating adaptive gait policies, residual corrections, and contrastive MoE training. The first stage trains stable walking and running behaviors with smooth transitions, while the second stage introduces a residual MoE branch guided by contrastive learning, generating terrain-aware motion adjustments and encouraging expert specialization across different terrains. Simulation experiments demonstrate superior success rates, locomotion stability, and multi-terrain adaptation compared with baseline approaches. Zero-shot deployment on a Unitree G1 robot further validates the framework, achieving robust walking and running on stairs, slopes, steps, obstacles, and natural outdoor terrains, while maintaining accurate foothold placement and dynamic stability under external disturbances.
           </p>
         </div>
         <div class="is-centered">
           <center>
-          <!-- TODO: 摘要下方视频（把下面 source 的 src 改成你的视频路径） -->
-          <!-- 说明：摘要区下方主展示视频（摘要内容的配套演示）
-               - 更换视频：替换 <source src="./resources/Full/Full-fixed.mp4">
-               - 建议：保留 poster/loading 占位图以优化首屏加载体验 -->
-          <video autoplay muted loop playsinline controls poster="./resources/loading-icon.gif" style="width: 100%; border: 1px solid #bbb; border-radius: 10px; margin: 2.0%;">
-            <source src="./resources/Full/Full-fixed.mp4" type="video/mp4">
-          </video>
+          <img src="./resources/cmu-wordmark-horizontal-r.png" alt="Abstract figure" style="width: 100%; border: 1px solid #bbb; border-radius: 10px; margin: 2.0%;">
           </center>
       </div>
       </div>
     </div>
   </div>
   </section>
+  
 <section class="section">
-
   <div class="container">
     <div class="columns is-centered has-text-centered">
       <div class="column is-two-thirds">
         <div class="content has-text-justified">
         <!-- TODO: 小节标题（可按你的实验内容修改） -->
-        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Training in Isaac Sim</h2>
+        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Outdoor Tests</h2>
         </div>
         <div class="is-centered">
           <center>
@@ -229,58 +191,66 @@
     </div>
   </div>
   </section>
-<!-- </section>
-<section class="hero teaser">
-  <div class="hero-body">
-    <div class="columns is-centered">
-      <div class="column is-9">
-        <div class="is-centered">
-          <center>
-          <video autoplay muted loop playsinline controls poster="./resources/loading-icon.gif" style="width: 85%; border: 1px solid #bbb; border-radius: 10px; margin: 2.0%;">
-            <source src="./resources/Full/Full-fixed.mp4" type="video/mp4">
-          </video>
-          </center>
-      </div>
-      </div>
-    </div>
-  </div>
-</section> -->
+
 
 <section class="section">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-full-width">
         <!-- TODO: 小节标题 -->
-        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Locomotion Ability</h2>
+        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Indoor Tests</h2>
           <td>
             <div class="row">
               <div class="col">
-                  <!-- TODO: 视频1路径（src） -->
-                  <!-- 说明：Locomotion Ability - 户外坑洞演示视频
-                       - 更换：修改 src="./resources/Locomotion_Ability/outdoor_pit.mp4" -->
+                  <!-- 视频 1 -->
                   <video autoplay muted loop playsinline controls src="./resources/Locomotion_Ability/outdoor_pit.mp4" width="100%"
                          style="border-radius:10px; "></video>
+                  <h3 class="subtitle has-text-centered">1</h3>
               </div>
               <div class="col">
-                <!-- TODO: 视频2路径（src） -->
-                <!-- 说明：Locomotion Ability - 间隙 0.5 演示视频 -->
+                <!-- 视频 2 -->
                 <video autoplay muted loop playsinline controls src="./resources/Locomotion_Ability/gap_0.5.mp4" width="100%"
                        style="border-radius:10px; "></video>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col">
-                  <!-- TODO: 视频3路径（src） -->
-                  <!-- 说明：Locomotion Ability - 台阶 0.5 演示视频 -->
-                  <video autoplay muted loop playsinline controls src="./resources/Step/Step0.5.mp4" width="100%"
-                         style="border-radius:10px; "></video>
+                <h3 class="subtitle has-text-centered">2</h3>
               </div>
               <div class="col">
-                <!-- TODO: 视频4路径（src） -->
-                <!-- 说明：Locomotion Ability - 间隙 0.8 演示视频 -->
+                <!-- 视频 3 -->
+                <video autoplay muted loop playsinline controls src="./resources/Step/Step0.5.mp4" width="100%"
+                       style="border-radius:10px; "></video>
+                <h3 class="subtitle has-text-centered">3</h3>
+              </div>
+              <div class="col">
+                <!-- 视频 4 -->
                 <video autoplay muted loop playsinline controls src="./resources/Gap/gap0.8.mp4" width="100%"
                        style="border-radius:10px; "></video>
+                <h3 class="subtitle has-text-centered">4</h3>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                  <!-- 视频 5（复用示例源，可后续替换） -->
+                  <video autoplay muted loop playsinline controls src="./resources/Locomotion_Ability/outdoor_pit.mp4" width="100%"
+                         style="border-radius:10px; "></video>
+                  <h3 class="subtitle has-text-centered">5</h3>
+              </div>
+              <div class="col">
+                <!-- 视频 6（复用示例源，可后续替换） -->
+                <video autoplay muted loop playsinline controls src="./resources/Locomotion_Ability/gap_0.5.mp4" width="100%"
+                       style="border-radius:10px; "></video>
+                <h3 class="subtitle has-text-centered">6</h3>
+              </div>
+              <div class="col">
+                <!-- 视频 7（复用示例源，可后续替换） -->
+                <video autoplay muted loop playsinline controls src="./resources/Step/Step0.5.mp4" width="100%"
+                       style="border-radius:10px; "></video>
+                <h3 class="subtitle has-text-centered">7</h3>
+              </div>
+              <div class="col">
+                <!-- 视频 8（复用示例源，可后续替换） -->
+                <video autoplay muted loop playsinline controls src="./resources/Gap/gap0.8.mp4" width="100%"
+                       style="border-radius:10px; "></video>
+                <h3 class="subtitle has-text-centered">8</h3>
               </div>
             </div>
             <br>
@@ -291,337 +261,6 @@
   </div>
 </section>
 
-
-<section class="section">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <!-- TODO: 小节标题 -->
-        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Stable Control under Visual Collapse</h2>
-          <td>
-            <div class="row">
-              <div class="col">
-                  <!-- TODO: 视频路径（src） -->
-                  <!-- 说明：视觉失效情景下稳定控制 - 案例 1 视频 -->
-                  <video autoplay muted loop playsinline controls src="./resources/Blind/blind_test1.mp4" width="100%"
-                         style="border-radius:10px; "></video>
-              </div>
-              <div class="col">
-                <!-- TODO: 视频路径（src） -->
-                <!-- 说明：视觉失效情景下稳定控制 - 案例 2 视频 -->
-                <video autoplay muted loop playsinline controls src="./resources/Blind/blind_test0.mp4" width="100%"
-                       style="border-radius:10px; "></video>
-              </div>
-            </div>
-            <br>
-          </td>
-        </tr>
-      </div> 
-    </div>
-  </div>
-</section>
-
-<!-- 说明：下方整段“Tilted Ramp”小节已被注释；若需显示，请移除外层注释。 -->
-<!-- 说明：下方整段“Method”小节已被注释；若需显示，请移除外层注释。 -->
-<!-- 说明：下方整段“Media/Press Coverage”媒体区块已被注释；若需显示，请移除外层注释。 -->
-<!-- <section class="section">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Tilted Ramp</h2>
-        <h5>
-          <center>
-            Fully autonomous without any human teleoperation.
-          </center>
-        </h5>
-        <br>
-          <td>
-            <div class="row">
-              <div class="col">
-                  <video autoplay muted loop playsinline controls src="./resources/Ramp/Ramp1.mp4" width="100%"
-                         style="border-radius:10px; "></video>
-              </div>
-              <div class="col">
-                <video autoplay muted loop playsinline controls src="./resources/Ramp/Ramp2.mp4" height="100%"
-                       style="border-radius:10px; "></video>
-              </div>
-            </div>
-            <br>
-          </td>
-        </tr>
-      </div> 
-    </div>
-  </div>
-</section> -->
-
-<!-- 说明：下方整段“Parkour Course”小节已被注释；若需显示，请移除外层注释。 -->
-<!-- <section class="section">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Parkour Course</h2>
-          <td>
-            <div class="row">
-              <div class="col">
-                  <video autoplay muted loop playsinline controls src="./resources/Full/FullParkourStep_Perfect.mp4" width="100%"
-                         style="border-radius:10px; "></video>
-              </div>
-              <div class="col">
-                <video autoplay muted loop playsinline controls src="./resources/Full/FullParkourHandstand.mp4" width="100%"
-                       style="border-radius:10px; "></video>
-              </div>
-            </div>
-            <br>
-          </td>
-        </tr>
-      </div> 
-    </div>
-  </div>
-</section> -->
-
-<!-- 说明：下方整段“Step”小节已被注释；若需显示，请移除外层注释。 -->
-<!-- <section class="section">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Step</h2>
-        <tr>
-          <td>
-            <div class="row">
-              <div class="col">
-                  <video autoplay muted loop playsinline controls src="./resources/Step/Step-wild.mp4" width="100%"
-                         style="border-radius:10px; "></video>
-              </div>
-              <div class="col">
-                <video autoplay muted loop playsinline controls src="./resources/Step/Step-outdoor-3.mp4" width="100%"
-                       style="border-radius:10px; "></video>
-              </div>
-            </div>
-            <br>
-            <div class="row">
-              <div class="col">
-                  <video autoplay muted loop playsinline controls src="./resources/Step/Outdoor_StepOn+Down0.4.mp4" width="100%"
-                         style="border-radius:10px; "></video>
-              </div>
-              <div class="col">
-                <video autoplay muted loop playsinline controls src="./resources/Step/Step0.4-bottom_view.mp4" width="100%"
-                       style="border-radius:10px; "></video>
-              </div>
-            </div>
-            <br>
-            
-            <br>
-          </td>
-        </tr>
-      </div> 
-    </div>
-  </div>
-</section> -->
-
-<!-- 说明：下方整段“Gap”小节已被注释；若需显示，请移除外层注释。 -->
-<!-- <section class="section">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Gap</h2>
-          <td>
-            <div class="row">
-              <div class="col">
-                  <video autoplay muted loop playsinline controls src="./resources/Gap/gap0.8.mp4" width="100%"
-                         style="border-radius:10px; "></video>
-              </div>
-              <div class="col">
-                <video autoplay muted loop playsinline controls src="./resources/Gap/Outdoor_Gap0.5.mp4" width="100%"
-                       style="border-radius:10px; "></video>
-              </div>
-            </div>
-            <br>
-          </td>
-        </tr>
-      </div> 
-    </div>
-  </div>
-</section> -->
-
-<!-- 说明：下方整段“Hurdle”小节已被注释；若需显示，请移除外层注释。 -->
-<!-- <section class="section">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Hurdle</h2>
-          <td>
-            <div class="row">
-              <div class="col">
-                  <video autoplay muted loop playsinline controls src="./resources/Hurdle/Hurdle2.mp4" width="100%"
-                         style="border-radius:10px; "></video>
-              </div>
-              <div class="col">
-                <video autoplay muted loop playsinline controls src="./resources/Hurdle/Hurdle1.mp4" width="100%"
-                       style="border-radius:10px; "></video>
-              </div>
-            </div>
-            <br>
-          </td>
-        </tr>
-      </div> 
-    </div>
-  </div>
-</section> -->
-
-<!-- 说明：下方整段“Robustness”小节已被注释；若需显示，请移除外层注释。 -->
-<!-- <section class="section">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Robustness</h2>
-          <td>
-            <div class="row">
-              <div class="col">
-                  <video autoplay muted loop playsinline controls src="./resources/Robustness/Robustness-1-comp.mp4" width="100%"
-                         style="border-radius:10px; "></video>
-              </div>
-              <div class="col">
-                <video autoplay muted loop playsinline controls src="./resources/Robustness/Robustness-2-comp.mp4" width="100%"
-                       style="border-radius:10px; "></video>
-              </div>
-            </div>
-            <br>
-          </td>
-        </tr>
-      </div> 
-    </div>
-  </div>
-</section> -->
-
-<!-- 说明：下方整段“Demo at CoRL 2023”小节已被注释；若需显示，请移除外层注释。 -->
-<!-- <section class="section">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-9">
-        <h2 class="title is-2" style="text-align: center;" id="demo">Demo at CoRL 2023</h2>
-        <div style="text-align: center;">
-        <span class="link-block">
-          <a target="_blank" href="https://x.com/xuxin_cheng/status/1725217484918440287?s=20"
-            class="external-link button is-normal is-rounded is-dark">
-            <span class="icon">
-                <i class="fab fa-twitter"></i>
-            </span>
-            <span>Tweet</span>
-          </a>
-        </span>
-        </div>
-          <center>
-          <video controls autoplay muted loop playsinline poster="./resources/loading-icon.gif" style="width: 60%; border: 1px solid #bbb; border-radius: 10px; margin: 2.0%;">
-            <source src="./resources/demo/demo.mp4" type="video/mp4">
-          </video><br>
-          Uncut 2 mins clip of our robot nonstop climbing, leaping across gaps, and jumping down from boxes.
-          </center>
-      </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-<section class="section">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <!-- TODO: 小节标题 -->
-        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Failure Cases</h2>
-        <tr>
-          <td>
-            <div class="row">
-              <div class="columns is-centered">
-                <!-- <div class="col">
-                  <h2 class="subtitle">
-                    Failure case from <a href="https://vision-locomotion.github.io/">Vision locomotion</a> project. It falls downstair. 
-                  </h2>
-                  <video autoplay muted loop playsinline controls src="./resources/Failure/failure-curb-compressed.mp4" width="100%"
-                        style="border-radius:10px; "></video>
-                </div> -->
-                <div class="col">
-                    <!-- TODO: 视频说明文字 -->
-                    <h2 class="subtitle">
-                      Without clearance reward, the robot easily touches the edge and fails on large gap terrain.
-                    </h2>
-                    <!-- TODO: 失败案例视频1路径（src） -->
-                    <video autoplay muted loop playsinline controls src="./resources/Failure/faile_no_vision_dr.mp4" width="100%"
-                          style="border-radius:10px; "></video>
-                </div>
-                <div class="col">
-                  <!-- TODO: 视频说明文字 -->
-                  <h2 class="subtitle">
-                    Without direction distillation, it is hard to control the robot via joystick on the ramp terrain.
-                  </h2>
-                  <!-- TODO: 失败案例视频2路径（src） -->
-                  <video autoplay muted loop playsinline controls src="./resources/Failure/fail_feet_clearance.mp4" width="100%"
-                        style="border-radius:10px; "></video>
-                </div>
-              </div>
-            </div>
-            <br>
-          </td>
-        </tr>
-      </div> 
-    </div>
-  </div>
-</section>
-
-
-<!-- <section class="section">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-9">
-        <h2 class="title is-2" style="text-align: center;">Method</h2>
-          <center>
-          <video autoplay muted loop playsinline poster="./resources/loading-icon.gif" style="width: 100%; border: 1px solid #bbb; border-radius: 10px; margin: 2.0%;">
-            <source src="./resources/Full/method.mp4" type="video/mp4">
-          </video>
-          </center>
-      </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-
-
-
-<!-- <section class="section">
-  <div class="container">
-    <h2 class="title is-2" style="text-align: center;" id="press-coverage">Media</h2>
-    <br>
-    <div class="columns is-centered">
-      <div class="column is-centered has-text-centered">
-        <a target="_blank" href="https://spectrum.ieee.org/video-friday-strandbeest-2">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/IEEE-Spectrum.svg" width="90%"></img>
-        </a>
-      </div>
-      <div class="column is-centered has-text-centered">
-        <a target="_blank" href="https://www.cs.cmu.edu/news/2023/robot-parkour">
-          <img src="https://www.cmu.edu/common/standard-v6/images/cmu-wordmark.png" width="90%"></img>
-        </a>
-      </div>
-      <div class="column is-centered has-text-centered">
-        <a target="_blank" href="https://mp.weixin.qq.com/s/AmQYi3QSfos6JbPH0HUnzg">
-          <h2>机器之心</h2>
-        </a>
-      </div>
-      <div class="column is-centered has-text-centered">
-        <a target="_blank" href="https://mp.weixin.qq.com/s/j1U-EI8CBcdKTEtKEIjw6Q">
-          <h2>量子位</h2>
-        </a>
-      </div>
-      <div class="column is-centered has-text-centered">
-        <a target="_blank" href="https://news.ycombinator.com/item?id=37812255">
-        <span class="icon">
-          <i class="fa-brands fa-square-hacker-news"></i>
-        </span>
-        <h2>Hacker News</h2>
-        </a>
-      </div>
-  </div>
-</section> -->
 
 <!-- 说明：下方整段“BibTeX”小节已被注释；若需显示，请移除外层注释。 -->
 <!-- <section class="section" id="BibTeX">
